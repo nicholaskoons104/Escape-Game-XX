@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class MoveCamera : MonoBehaviour
 {
+
+    public Transform cameraPosition;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +16,6 @@ public class MoveCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        transform.position = cameraPosition.position;
     }
 }
